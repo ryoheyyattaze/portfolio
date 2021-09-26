@@ -494,6 +494,7 @@ body {
     }
     & input {
       width: 80%;
+      font-size: 14px;
     }
     & textarea {
       width: 80%;
@@ -507,6 +508,9 @@ body {
     margin: 0 auto 0 0;
     & input {
       cursor: pointer;
+      border: none;
+      background-color: $cWhite;
+      font-family: "Scheherazade New", serif;
       &:nth-child(1) {
         margin-right: 20px;
       }

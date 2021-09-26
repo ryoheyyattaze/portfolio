@@ -656,6 +656,7 @@ body {
 
 .contact__item input {
   width: 80%;
+  font-size: 14px;
 }
 
 .contact__item textarea {
@@ -676,6 +677,9 @@ body {
 
 .contact__btn input {
   cursor: pointer;
+  border: none;
+  background-color: white;
+  font-family: "Scheherazade New", serif;
 }
 
 .contact__btn input:nth-child(1) {
