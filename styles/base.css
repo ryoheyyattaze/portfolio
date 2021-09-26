@@ -164,10 +164,6 @@ body {
   overflow: hidden;
 }
 
-.dt-header__container {
-  opacity: 0;
-}
-
 .dt-header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,12 +821,21 @@ footer .totop a::before {
   }
   .main {
     height: 100vh;
+    position: relative;
+  }
+  .main__top {
+    position: relative;
+    height: 100vh;
   }
   .main__img {
+    position: absolute;
+    right: 0;
     width: 60%;
     height: 100%;
-    margin-left: auto;
     margin-bottom: 50px;
+  }
+  .sticky-container {
+    position: relative;
   }
   .dt-header {
     position: -webkit-sticky;
@@ -842,13 +847,15 @@ footer .totop a::before {
     z-index: 1500;
   }
   .dt-header__container {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .7s;
+    transition: .7s;
   }
   .dt-header__container.inview {
+    -webkit-transition: .7s;
+    transition: .7s;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
@@ -914,6 +921,11 @@ footer .totop a::before {
   }
   .profile {
     margin-bottom: 100px;
+    position: relative;
+    height: 70vh;
+  }
+  .profile__wrapper {
+    position: absolute;
   }
   .profile__inner {
     -webkit-box-orient: horizontal;

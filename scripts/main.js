@@ -90,4 +90,3 @@ const io2 = new IntersectionObserver(cb, options2);
 targets.forEach(target => {
   io.observe(target);
 })
-io2.observe(targets[0],{once: false});

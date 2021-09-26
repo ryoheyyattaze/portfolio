@@ -80,13 +80,24 @@
 
 .main {
   height: 100vh;
+  position: relative;
+  &__top {
+    position: relative;
+    height: 100vh;
+  }
   &__img {
+    position: absolute;
+    right: 0;
     width: 60%;
     height: 100%;
-    margin-left: auto;
     margin-bottom: 50px;
   }
 }
+
+.sticky-container {
+  position: relative;
+}
+
 
 .dt-header {
   position: sticky;
@@ -96,10 +107,11 @@
   background-color: transparent;
   z-index: 1500;
   &__container {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(100%);
-    transition: .5s;
+    transition: .7s;
     &.inview {
+      transition: .7s;
       transform: translateX(0);
       opacity: 1;
     }
@@ -110,6 +122,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     & >  h1 {
       user-select: none;
       font-size: 36px;
@@ -155,6 +168,11 @@
 
 .profile {
   margin-bottom: 100px;
+  position: relative;
+  height: 70vh;
+  &__wrapper {
+    position: absolute;
+  }
   &__inner {
     flex-direction: row;
     margin-left: 200px;
