@@ -528,7 +528,8 @@ body {
 .works__en {
   position: absolute;
   top: 50px;
-  right: 60px;
+  right: 50px;
+  z-index: 1000;
 }
 
 .works__en span {

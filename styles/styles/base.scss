@@ -391,7 +391,8 @@ body {
   &__en {
     position: absolute;
     top: 50px;
-    right: 60px;
+    right: 50px;
+    z-index: 1000;
     & span {
       transform: rotate(90deg);
     }
