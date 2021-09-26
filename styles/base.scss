@@ -391,7 +391,8 @@ body {
   &__en {
     position: absolute;
     top: 50px;
-    right: 60px;
+    right: 50px;
+    z-index: 1000;
     & span {
       transform: rotate(90deg);
     }
@@ -495,7 +496,7 @@ body {
     right: 0;
     display: flex;
     width: 40%;
-    transform: translate(-40%, 120%);
+    transform: translate(-70%, 120%);
     & input {
       width: 90%;
       cursor: pointer;
