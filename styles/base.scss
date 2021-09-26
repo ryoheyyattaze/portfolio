@@ -229,7 +229,7 @@ body {
   height: 100vh;
   &__img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 }
@@ -495,7 +495,7 @@ body {
     right: 0;
     display: flex;
     width: 40%;
-    transform: translate(-50%, 120%);
+    transform: translate(-40%, 120%);
     & input {
       width: 90%;
       cursor: pointer;
