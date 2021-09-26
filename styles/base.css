@@ -736,6 +736,13 @@ footer .totop a::before {
           transform: translateX(-50%);
 }
 
+@media (min-width: 600px) {
+  .contact__btn {
+    -webkit-transform: translate(-10%, 120%);
+            transform: translate(-10%, 120%);
+  }
+}
+
 @media (min-width: 960px) {
   .main-title {
     font-size: 13px;
@@ -985,6 +992,10 @@ footer .totop a::before {
   .contact {
     height: 600px;
     margin-bottom: 200px;
+  }
+  .contact__btn {
+    -webkit-transform: translate(-10%, 150%);
+            transform: translate(-10%, 150%);
   }
 }
 /*# sourceMappingURL=base.css.map */

@@ -217,4 +217,7 @@
 .contact {
   height: 600px;
   margin-bottom: 200px;
+  &__btn {
+    transform: translate(-10%, 150%);
+  }
 }
