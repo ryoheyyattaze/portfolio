@@ -162,6 +162,7 @@ body {
 
 .dt-header {
   overflow: hidden;
+  opacity: 0;
 }
 
 .dt-header__inner {
@@ -187,8 +188,8 @@ body {
   visibility: hidden;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .mobile-menu__cover {
@@ -201,8 +202,8 @@ body {
 
 .mobile-menu__cover.menu-open {
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   opacity: 1;
   visibility: visible;
   z-index: 700;
@@ -222,8 +223,8 @@ body {
   height: 2px;
   display: block;
   margin-bottom: 9px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mobile-menu__btn.menu-open > span:nth-child(1) {
@@ -246,8 +247,8 @@ body {
   list-style: none;
   padding: 0 40px;
   margin-top: 100px;
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
 }
@@ -472,8 +473,8 @@ body {
      object-fit: cover;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   opacity: 0;
   visibility: hidden;
 }
@@ -490,8 +491,8 @@ body {
   margin: 0 auto;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   opacity: 0;
   visibility: hidden;
 }
@@ -558,8 +559,8 @@ body {
 
 .works__item {
   margin-bottom: 30px;
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
@@ -617,12 +618,11 @@ body {
 .contact__form {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .contact__form form {
   height: 100%;
-  width: 80%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +636,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 25%;
+  margin-left: 40%;
+  position: relative;
 }
 
 .contact__item {
@@ -651,27 +652,29 @@ body {
 }
 
 .contact__item input {
-  width: 80%;
+  width: 100%;
   font-size: 14px;
 }
 
 .contact__item textarea {
-  width: 80%;
+  width: 100%;
   font-size: 12px;
 }
 
 .contact__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  width: 80%;
-  margin: 0 auto 0 0;
+  width: 40%;
+  -webkit-transform: translate(-50%, 120%);
+          transform: translate(-50%, 120%);
 }
 
 .contact__btn input {
+  width: 90%;
   cursor: pointer;
   border: none;
   background-color: white;
@@ -710,12 +713,12 @@ footer .totop a:hover::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 footer .totop a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -723,8 +726,8 @@ footer .totop a::before {
   height: 1px;
   background-color: white;
   opacity: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
