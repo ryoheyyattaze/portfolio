@@ -121,7 +121,10 @@ body {
 
 .dt-header {
   overflow: hidden;
-  opacity: 0;
+  // opacity: 0;
+  &__container {
+    opacity: 0;
+  }
   &__inner {
     display: flex;
   }

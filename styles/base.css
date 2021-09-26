@@ -162,6 +162,9 @@ body {
 
 .dt-header {
   overflow: hidden;
+}
+
+.dt-header__container {
   opacity: 0;
 }
 
@@ -670,8 +673,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 40%;
-  -webkit-transform: translate(-70%, 120%);
-          transform: translate(-70%, 120%);
+  -webkit-transform: translate(-100%, 120%);
+          transform: translate(-100%, 120%);
 }
 
 .contact__btn input {
